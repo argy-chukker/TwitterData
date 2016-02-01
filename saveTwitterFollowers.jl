@@ -106,7 +106,7 @@ while(cursor != 0)
         
     if((remaining == 0) || (remainingUsers == 0))
         sleepingTime = max(refreshTime, refreshTimeUsers) - time()
-        sleepingTime += 30
+        sleepingTime += 60
         print("Sleeping for $(sleepingTime / 60) minutes.\n")
         sleep(sleepingTime)
         print("Done Sleeping.\n")
